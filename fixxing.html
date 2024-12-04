@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heavenly Gamer E-commerce Site</title>
+    <link rel="icon" href="original.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            background-color: black;
+            position: relative;
+            background-image: url("adce9e5f66922faf24a16da02da74167.gif");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            backdrop-filter: blur(30px);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        header {
+            color: #e4e4e4;
+            padding: 1rem;
+            text-align: center;
+            background: #000;
+        }
+
+        header .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header img {
+            width: 90px;
+            height: 90px;
+        }
+
+        header h1 {
+            color: white;
+            text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan, 0 0 80px cyan;
+            font-size: 40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+            background-color: gray;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+
+            color: #ffffff;
+            padding: 10px 5px;
+            text-decoration: none;
+            text-align: center;
+            background-color: brown;
+            border: 3px solid #000;
+            border-radius: 20px;
+            margin: 0 20px;
+            transition: transform 0.3s;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        nav a:hover {
+            transform: scale(1.1);
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 20px;
+
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+
+            background: #00000063;
+            font-size: 20px;
+            width: auto;
+
+
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+
+
+            font-size: 20px;
+            width: auto;
+            margin: auto;
+
+        }
+
+
+        .box1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+            font-size: 20px;
+            width: 450px;
+        }
+
+        .box1 p {
+
+            font-size: 20px;
+
+            padding: 10px;
+            border-radius: 30px;
+            width: 450px;
+            background: #c994a1;
+            text-align: center;
+            box-shadow: 1px 5px 15px;
+        }
+
+        .box h2 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+            font-size: 50px;
+            border: rgb(112, 97, 97) 6px solid;
+            padding: 10px;
+            border-radius: 30px;
+            width: 450px;
+            background: #c994a1;
+            text-align: center;
+            box-shadow: 1px 5px 15px;
+        }
+
+        .box h1 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(7, 6, 6);
+            font-size: 30px;
+        }
+
+        .box1 p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(0, 0, 0);
+
+        }
+
+        #outerbox {
+            width: 510px;
+            overflow: hidden;
+            flex-direction: column;
+            justify-content: end;
+            align-items: end;
+            border-radius: 10px;
+            background-color: transparent;
+            margin: 0 auto;
+            box-shadow: 1px 5px 15px;
+
+        }
+
+        #sliderbox {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 510px;
+            animation: slider 45s infinite;
+        }
+
+        #sliderbox img {
+            width: 100%;
+            height: 100%;
+        }
+
+        @keyframes slider {
+
+            0%,
+            10% {
+                left: 0;
+            }
+
+            12.5%,
+            22.5% {
+                left: -100%;
+            }
+
+            25%,
+            35% {
+                left: -200%;
+            }
+
+            37.5%,
+            47.5% {
+                left: -300%;
+            }
+
+            50%,
+            60% {
+                left: -400%;
+            }
+
+            62.5%,
+            72.5% {
+                left: -500%;
+            }
+
+            75%,
+            85% {
+                left: -600%;
+            }
+
+            87.5%,
+            97.5% {
+                left: -700%;
+            }
+
+            100% {
+                left: -800%;
+            }
+        }
+
+        footer {
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        footer a {
+            color: #fff;
+            text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 40px cyan, 0 0 80px cyan;
+            text-decoration: none;
+        }
+
+        img {
+            width: 90px;
+            height: 90px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="original.png" alt="Logo">
+            <h1>Heavenly Games Store</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="fixxing.html"> <i class="fas fa-home nav-icon"></i> Home </a>
+
+        <a href="about.html"> <i class="fas fa-info-circle nav-icon"></i> About Us </a>
+        <a href="lab2.html"> <i class="fas fa-gamepad nav-icon"></i> Games </a>
+       
+    </nav>
+    <div class="container1">
+        <div class="container">
+            <div class="box">
+                <h2 class="welcome-text">Welcome to Our Heavenly Games Store</h2>
+                <div class="box1">
+                    <p>Heavenly Games Store: Your Gateway to Gaming Excellence
+                        Welcome to Heavenly Games Store, your ultimate destination for a diverse range of games and
+                        gaming
+                        accessories! We pride ourselves on providing high-quality titles across various genres, ensuring
+                        there’s
+                        something for every gamer. From action-packed adventures and immersive RPGs to captivating indie
+                        games,
+                        our selection is carefully curated to offer you the best gaming experience possible.</p>
+                </div>
+            </div>
+            <div class="container1">
+                <div id="outerbox">
+                    <div id="sliderbox">
+                        <img src="FICKGFAJDOUSMMU.webp" alt="Image 1">
+                        <img src="amoguslandscape_2560x1440-3fac17e8bb45d81ec9b2c24655758075.jpeg" alt="Image 2">
+                        <img src="cod-black-ops-6-vault-edition.webp" alt="Image 3">
+                        <img src="06f9b422-9489-42bc-bea0-00fdcda498b8.jpg" alt="Image 4">
+                        <img src="forza-horizon-5-button-fin-1629830068379.jpg" alt="Image 5">
+                        <img src="305785-The_Texas_Chain_Saw_Massacre-movies-horror.jpg" alt="Image 6">
+                        <img src="OIP (5).jpeg" alt="Image 7">
+                        <img src="ghost-of-tsushima.jpg" alt="Image 8">
+                        <img src="hades_3277133b.jpg" alt="Image 9">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="original.png" alt="Logo">
+        <p>© 2024 Business E-commerce Store</p>
+        <a href="contact.html" style="color: #f3dbdb;">Contact Us</a>
+    </footer>
+</body>
+
+</html>
